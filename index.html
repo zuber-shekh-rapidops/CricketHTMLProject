@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/css/app.css">
     <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/14caed6bdc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>IPL</title>
 </head>
 <body>
@@ -17,13 +18,20 @@
     </header>
     <!-- NAVIGATION -->
     <nav class="navigation">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="teams.html">teams</a></li>
-            <li><a href="matches.html">matches</a></li>
-            <li><a href="venues.html">venues</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="stats.html">stats</a></li>
+        <span class="collapse-btn" onclick="showMenu(this)">
+            <i class="fas fa-bars"><span> Menu</span></i>
+        </span>
+        <span class="cancel-btn" onclick="closeMenu(this)">
+            <i class="far fa-window-close"><span> Cancel</span></i>
+        </span>
+
+        <ul class="nav-links">
+            <li class="link-item"><a href="index.html">home</a></li>
+            <li class="link-item"><a href="teams.html">teams</a></li>
+            <li class="link-item"><a href="matches.html">matches</a></li>
+            <li class="link-item"><a href="venues.html">venues</a></li>
+            <li class="link-item"><a href="gallery.html">gallery</a></li>
+            <li class="link-item"><a href="stats.html">stat</a></li>
         </ul>
     </nav>
     <!-- MAIN  -->
@@ -32,22 +40,23 @@
         <section class="section-1">
             <figure>
                 <img src="/static/images/ipl_logo.png" alt="ipl logo">
-                    <figcaption>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat numquam repudiandae deleniti exercitationem quod laudantium asperiores provident cum molestiae, ea saepe eius cupiditate animi optio, delectus eligendi est dolores omnis. Commodi, cumque? Fugit nemo error quod mollitia excepturi consequatur consequuntur, deleniti distinctio. Amet, totam distinctio sapiente error eaque ducimus consequuntur!</p>
-                    </figcaption>
             </figure>  
         </section>
         <section class="section-2">
-            <figure>
-                <img class="cover-img" src="/static/images/80b51482ec4457710f2e7b2ca0148a3d.jpg" alt="cover photo">
-            </figure>
             
+            <figure>
+                <img class="cover-img" src="/static/images/last_season_winner.jpg" alt="last season winner">
+                <figcaption>
+                    <h2 class="heading-2">ipl 2019 champions mumbai indians</h2>
+                </figcaption>
+            </figure>
         </section>
     </main>
     <!-- FOOTER  -->
     <footer>
-        <section>
-            <h3 class="copyright">copyright &copy; 2020</h3>
+        <section class="copyright">
+            <h3>copyright &copy; 2020</h3>
+            <h4>all rights reserved by Zuber Shekh</h4>
         </section>
         <section class="social-icons">
             <h3>follow us on</h3>
@@ -57,5 +66,7 @@
             <i class="fab fa-twitter"></i>
         </section>
     </footer>
+    <div class="demo">asdsadsadasd</div>
+    <script src="/static/js/script.js"></script>
 </body>
 </html>
